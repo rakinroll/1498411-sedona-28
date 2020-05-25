@@ -16,32 +16,74 @@
 				<li><a href="catalog.html">гостиницы</a></li>
 			</ul>
 		</nav>
-		<h1><a href="index.html"><img src="img/logo-sedona.svg" width="138" height="70" alt="логотоип Седона"></a></h1>
+		<h1>
+			<a href="index.html">
+				<img src="img/logo-sedona.svg" width="138" height="70" alt="главная страница Седона">
+			</a>
+		</h1>
 	</header>
 	
 	<main>
 		<section>
 			<!--будет фоновая картинка-->
-			<table>
-				<tr>
-					<th>Инфраструктура:</th>
-					<th>Тип жилья:</th>
-					<th>Стоиость в сутки (Р):</th>
-				</tr>
-				<tr>
-					<td>Бассейн</td><td>Гостиница</td><td>От 0 до 3000</td>
-				</tr>
-				<tr>
-					<td>Парковка</td><td>Мотель</td>
-				</tr>
-				<tr>
-					<td>WI-FI</td><td>Апартаменты</td>
-				</tr>
-				<tr>
-					<td>Найдено: 3</td><td>Сортировка:</td><td>По цене</td><td>По типу</td><td>По рейтингу</td>
-				</tr>
-			</table>
-			<button type="button">Показать</button>
+			<form action="https://echo.htmlacademy.ru" method="GET">
+				<fieldset>
+					<legend>Инфраструктура:</legend>
+					<ul>
+						<li>
+							<label>	
+								<input type="checkbox" name="swimming-pool" checked>
+								Бассейн
+							</label>
+						</li>
+						<li>
+							<label>	
+								<input type="checkbox" name="parking">
+								Парковка
+							</label>
+						</li>
+						<li>
+							<label>	
+								<input type="checkbox" name="wi-fi">
+								wi-fi
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Тип жилья:</legend>
+					<ul>
+						<li>
+							<label>	
+								<input type="checkbox" name="hotel" checked>
+								Гостиницы
+							</label>
+						</li>
+						<li>
+							<label>	
+								<input type="checkbox" name="motel" checked>
+								Мотель
+							</label>
+						</li>
+						<li>
+							<label>	
+								<input type="checkbox" name="apartment" checked>
+								Апартаменты
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>Стоимость в сутки (р):</legend>
+					<ul>
+						<li><p>От 0 до 3000</p></li>
+						<li>
+							<input type="range" min="0" max="3000" step="1">
+						</li>
+					</ul>
+				</fieldset>
+				<button type="submit">Показать</button>
+			</form>
 		</section>
 		<section>
 			<h2>Найденные отели</h2>
@@ -49,7 +91,7 @@
 				<li>
 					<h3><a href="catalog.html">Amara resort & spa</a></h3>
 					<p>
-						<img src="img/amara.jpg" width="135" height="90" alt="фото гостиницы">
+						<img src="img/amara.jpg" width="135" height="90" alt="гостиница Amara resort">
 					</p>
 						Гостиница от 4000 р.
 						<a href="catalog.html">Подробнее</a>
@@ -66,7 +108,7 @@
 				<li>
 					<h3><a href="catalog.html">Desert quail inn</a></h3>
 					<p>
-						<img src="img/desert.jpg" width="135" height="90" alt="фото гостиницы">
+						<img src="img/desert.jpg" width="135" height="90" alt="мотель Desert quail inn">
 					</p>
 						Мотель от 3000 р.
 						<a href="catalog.html">Подробнее</a>
@@ -82,7 +124,7 @@
 				<li>
 					<h3><a href="catalog.html">Vilas at poco diablo</a></h3>
 					<p>
-						<img src="img/villas.jpg" width="135" height="90" alt="фото гостиницы">
+						<img src="img/villas.jpg" width="135" height="90" alt="апартаменты Vilas at poco diablo">
 					</p>
 						Апартаменты от 2000 р.
 						<a href="catalog.html">Подробнее</a>
