@@ -120,7 +120,7 @@ ul {
   background-color: var(--basic-brown);
   border: none;
   width: 568px;
-  height: 86px;
+  min-height: 86px;
 }
 
 .button:hover,
@@ -130,11 +130,7 @@ ul {
 
 .button:active {
   background-color: var(--brown-active);
-}
-
-.button:active span{
-  mix-blend-mode: normal;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .form-search {
@@ -172,7 +168,7 @@ ul {
   background-color: var(--basic-blue);
   border: none;
   width: 458px;
-  height: 58px;
+  min-height: 58px;
 }
 
 .search:hover,
@@ -182,11 +178,7 @@ ul {
 
 .search:active {
   background-color: var(--blue-avtive-button);
-}
-
-.search:active span{
-  mix-blend-mode: normal;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-footer {
@@ -206,8 +198,7 @@ ul {
   background-color: var(--basic-blue);
   border: none;
   width: 46px;
-  height: 48px;
-  margin: 5px;
+  min-height: 48px;
 }
 
 .icon-social img {
@@ -228,31 +219,22 @@ ul {
   opacity: 0.3;
 }
 
-.button-copuright:focus,
-.button-copuright:hover {
-  background-color: var(--basic-blue);
-}
-
 /* страница каталог */
 
-.hotel-search h3 {
+.name-hotel {
   font-size: 21px;
   line-height: 26px;
-}
-
-.hotel-search p {
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.hotel-search li a{
+  font-weight: bold;
   color: var(--basic-black);
 }
 
-.hotel-search li a {
-  color: var(--basic-white);
-  font-size: 14px;
-  line-height: 21px;
+.name-hotel:focus,
+.name-hotel:hover {
+  color: var(--blue-focus-button);
+}
+
+.name-hotel:active {
+  color: var(--basic-grey);
 }
 
 .button-detailed {
@@ -263,22 +245,18 @@ ul {
   background-color: var(--basic-blue);
   border: none;
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   color: var(--basic-white);
 }
 
 .button-detailed:hover,
 .button-detailed:focus {
-  background-color: var(--blue-focus-button);
+  background-color: var(--basic-blue);
 }
 
 .button-detailed:active {
   background-color: var(--blue-avtive-button);
-}
-
-.button-detailed:active span {
-  mix-blend-mode: normal;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-book {
@@ -289,7 +267,7 @@ ul {
   background-color: var(--basic-brown);
   border: none;
   width: 142px;
-  height: 27px;
+  min-height: 27px;
   color: var(--basic-white);
 }
 
@@ -300,10 +278,6 @@ ul {
 
 .button-book:active {
   background-color: var(--brown-active);
-}
-
-.button-book:active span {
-  mix-blend-mode: normal;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
