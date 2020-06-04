@@ -10,6 +10,10 @@
   --brown-active: #503E33;
 }
 
+.page {
+  height: 100%;
+}
+
 body {
   min-width: 1220px;
   margin: 0;
@@ -21,6 +25,10 @@ body {
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -45,8 +53,28 @@ ul {
   margin: -1px;
 }
 
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+  position: absolute;
+}
+
 .site-navigation {
-  list-style: none;
+  min-width: 1074px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 280px;
+}
+
+.main-navigation {
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site-navigation a {
@@ -60,11 +88,15 @@ ul {
 }
 
 .active a {
-  color: var(--basic-grey);
+  color: var(--basic-brown);
 }
 
 .site-navigation a:active {
-  color: var(--basic-grey);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-page {
+  align-items: center;
 }
 
 .main-welcome {
@@ -74,34 +106,94 @@ ul {
 }
 
 .main-welcome p {
+  margin: 0;
   text-align: center;
   padding-top: 76px;
 }
 
 .shape {
   display:block;
-  margin:auto;
-  padding-top: 3px;
+  margin: auto;
+}
+
+.causes-heading {
+  min-height: 173px;
+  padding-top: 43px;
 }
 
 .causes-heading h2 {
   font-size: 21px;
   line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.causes-grid {
+  width: 1220px;
+  margin: auto;
+}
+
+.grid-one {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.grid-second {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 37px;
+  margin-bottom: 37px;
+}
+
+.grid-second .causes-container h3 {
+  margin-top: 0;
+  margin-top: 28px;
+}
+
+.grid-third {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: 1fr;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+
+.grid-fourth {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.causes-container {
+  min-height: 256px;
+  width: 400px;
+  text-align: center;
+}
+
+.causes-container-img {
+  height: 256px;
+}
+
+.news-pic {
+  width: 820px;
+  max-height: 256px;
 }
 
 .causes-list h3 {
   font-size: 21px;
   line-height: 21px;
+  margin: 0;
+  margin-top: 47px;
 }
 
 .causes-list p {
   line-height: 21px;
-}
-
-.causes-list li:nth-child(1),
-.causes-list li:nth-child(5) {
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
+  margin: 0;
+  margin-top: 25px;
 }
 
 .search-container h2 {
@@ -183,6 +275,25 @@ ul {
 
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
+  outline: 4px solid red;
+  outline-offset: -4px;
+}
+
+.container {
+  width: 1220px;
+  margin: auto;
+}
+
+.main-footer .container {
+  min-height: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact {
+  outline: 2px solid green;
+  outline-offset: -2px;
+  text-align: left;
 }
 
 .contact a {
@@ -190,6 +301,20 @@ ul {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
+  margin: 0;
+  margin-left: 117px;
+  margin-top: 23px;
+}
+
+.contact-social {
+  outline: 2px solid yellow;
+  outline-offset: -2px;
+}
+
+.social-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .icon-social {
@@ -219,7 +344,62 @@ ul {
   opacity: 0.3;
 }
 
+.copyright {
+  outline: 2px solid magenta;
+  outline-offset: -2px;
+}
+
+.copyright p {
+  display: inline-block;
+  margin: 0;
+}
+
+.copyright-pic {
+  margin-top: 38px;
+}
+
 /* страница каталог */
+
+.container-hotels {
+  width: 1074px;
+  margin: auto;
+  outline: 4px solid red;
+  outline-offset: -4px;
+}
+
+.list-hotels {
+  height: 150px;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.hotel-image {
+  margin-right: 29px;
+}
+
+.hotel-reserve {
+  text-align: left;
+  flex-grow: 2;
+}
+
+.list-hotels .hotel-reserve p {
+  margin-top: 7px;
+  margin-bottom: 6px;
+}
+
+.list-hotels li {
+  margin-top: 30px;
+}
+
+.list-hotels h3,
+.list-hotels p {
+  margin: 0;
+}
+
+.hotel-raiting p {
+  margin-top: 40px;
+}
 
 .name-hotel {
   font-size: 21px;
@@ -234,7 +414,7 @@ ul {
 }
 
 .name-hotel:active {
-  color: var(--basic-grey);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .button-detailed {
@@ -280,4 +460,3 @@ ul {
   background-color: var(--brown-active);
   color: rgba(255, 255, 255, 0.3);
 }
-

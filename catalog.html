@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>Седона: Гостиницы</title>
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+  <title>Седона: Главная</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+
+<body class="page-body">
 
 	<header class="main-header">
 		<nav class="main-navigation">
-			<ul class="site-navigation">
-				<li><a href="index.html">информация</a></li>
-				<li><a href="">фото и видео</a></li>
-				<li><a href="">карта штата</a></li>
-				<li class="active"><a href="catalog.html">гостиницы</a></li>
-      </ul>
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo-sedona.svg" width="138" height="70" alt="главная страница Седона">
+        </a>
+			  <ul class="site-navigation">
+				  <li class="active"><a href="index.html">информация</a></li>
+				  <li><a href="">фото и видео</a></li>
+				  <li><a href="">карта штата</a></li>
+				  <li><a href="catalog.html">гостиницы</a></li>
+        </ul>
 		</nav>
-		<h1 class="visually-hidden">Заголовок</h1>
-		<a href="index.html">
-			<img src="img/logo-sedona.svg" width="138" height="70" alt="главная страница Седона">
-		</a>
-	</header>
+  </header>
 
-	<main>
+	<main class="main-page">
 		<section class="visually-hidden">
 			<!--будет фоновая картинка-->
 			<form action="https://echo.htmlacademy.ru" method="GET">
@@ -86,92 +86,100 @@
 				<button type="submit">Показать</button>
 			</form>
 		</section>
-		<section>
+		<section class="container-hotels">
 			<h2 class="visually-hidden">Найденные отели</h2>
-			<ul>
-				<li>
-					<h3><a class="name-hotel" href="catalog.html">Amara resort & spa</a></h3>
-					<p>
-						<img src="img/amara.jpg" width="135" height="90" alt="гостиница Amara resort">
-					</p>
-					<p>Гостиница от 4000 р.</p>
-					<a class="button-detailed" href="catalog.html">Подробнее</a>
-					<a class="button-book" href="catalog.html">Забронировать</a>
-					<p>
-						<img src="img/star.svg" width="18" height="17" alt="рейтинг">
-						<img src="img/star.svg" width="18" height="17" alt="рейтинг">
-						<img src="img/star.svg" width="18" height="17" alt="рейтинг">
-						<img src="img/star.svg" width="18" height="17" alt="рейтинг">
-          </p>
+      <ul class="list-hotels">
+        <li class="hotel-image">
+          <img src="img/amara.jpg" width="135" height="90" alt="гостиница Amara resort">
+        </li>
+				<li class="hotel-reserve">
+          <h3><a class="name-hotel" href="catalog.html">Amara resort & spa</a></h3>
+          <p>Гостиница от 4000 р.</p>
+          <a class="button-detailed" href="catalog.html">Подробнее</a>
+          <a class="button-book" href="catalog.html">Забронировать</a>
+        </li>
+        <li class="hotel-raiting">
+					<img src="img/star.svg" width="18" height="17" alt="рейтинг">
+					<img src="img/star.svg" width="18" height="17" alt="рейтинг">
+					<img src="img/star.svg" width="18" height="17" alt="рейтинг">
+          <img src="img/star.svg" width="18" height="17" alt="рейтинг">
           <p>Рейтинг: 8,5</p>
-				</li>
+        </li>
+      </ul>
 
-				<li>
+      <ul class="list-hotels">
+				<li class="hotel-image">
+          <img src="img/desert.jpg" width="135" height="90" alt="мотель Desert quail inn">
+        </li>
+        <li class="hotel-reserve">
 					<h3><a class="name-hotel" href="catalog.html">Desert quail inn</a></h3>
-					<p>
-						<img src="img/desert.jpg" width="135" height="90" alt="мотель Desert quail inn">
-					</p>
 					<p>Мотель от 3000 р.</p>
 					<a class="button-detailed" href="catalog.html">Подробнее</a>
 					<a class="button-book" href="catalog.html">Забронировать</a>
-					<p>
-						<img src="img/star.svg" width="18" height="17" alt="рейтинг">
-						<img src="img/star.svg" width="18" height="17" alt="рейтинг">
-            <img src="img/star.svg" width="18" height="17" alt="рейтинг">
-          </p>
+        </li>
+        <li class="hotel-raiting">
+					<img src="img/star.svg" width="18" height="17" alt="рейтинг">
+					<img src="img/star.svg" width="18" height="17" alt="рейтинг">
+          <img src="img/star.svg" width="18" height="17" alt="рейтинг">
 					<p>Рейтинг: 8,9</p>
-				</li>
+        </li>
+      </ul>
 
-				<li>
+      <ul class="list-hotels">
+				<li class="hotel-image">
+          <img src="img/villas.jpg" width="135" height="90" alt="апартаменты Vilas at poco diablo">
+        </li>
+        <li class="hotel-reserve">
 					<h3><a class="name-hotel" href="catalog.html">Vilas at poco diablo</a></h3>
-					<p>
-						<img src="img/villas.jpg" width="135" height="90" alt="апартаменты Vilas at poco diablo">
-					</p>
-          <p>Апартаменты от 2000 р.</p>
-          <a class="button-detailed" href="catalog.html">Подробнее</a>
+					<p>Апартаменты от 2000 р.</p>
+					<a class="button-detailed" href="catalog.html">Подробнее</a>
 					<a class="button-book" href="catalog.html">Забронировать</a>
-					<p>
-						<img src="img/star.svg" width="18" height="17" alt="рейтинг">
-            <img src="img/star.svg" width="18" height="17" alt="рейтинг">
-          </p>
+        </li>
+        <li class="hotel-raiting">
+					<img src="img/star.svg" width="18" height="17" alt="рейтинг">
+					<img src="img/star.svg" width="18" height="17" alt="рейтинг">
 					<p>Рейтинг: 9,2</p>
-				</li>
-			</ul>
+        </li>
+      </ul>
 		</section>
 	</main>
 
   <footer class="main-footer">
-		<section class="contact">
-			<h2 class="visually-hidden">Как с нами связаться</h2>
-			<p><a href="index.html">#VISITSEDONA</a></p>
-			<p><a href="tel:+74951234567">ТЕЛ: +7(495) 666-01-66</a></p>
-		</section>
-		<section>
-			<h2 class="visually-hidden">Наши соцсети</h2>
-			<ul>
-				<li>
-					<a class="icon-social" href="">
+    <div class="container">
+		  <section class="contact">
+			  <h2 class="visually-hidden">Как с нами связаться</h2>
+			  <p><a href="index.html">#VISITSEDONA</a></p>
+			  <p><a href="tel:+74951234567">ТЕЛ: +7(495) 666-01-66</a></p>
+		  </section>
+		  <section class="contact-social">
+			  <h2 class="visually-hidden">Наши соцсети</h2>
+			  <ul class="social-navigation">
+				  <li>
+					  <a class="icon-social" href="">
               <img src="img/twitter.svg" width="17" height="15" alt="twiiter">
-          </a>
-        </li>
-				<li>
-          <a class="icon-social" href="">
+            </a>
+          </li>
+				  <li>
+            <a class="icon-social" href="">
               <img src="img/fb-icon.svg" width="12" height="22" alt="facebook">
-          </a>
-        </li>
-        <li>
+            </a>
+          </li>
+          <li>
 					  <a class="icon-social" href="">
                 <img src="img/youtube.svg" width="20" height="16" alt="youtube">
             </a>
-        </li>
-			</ul>
-		</section>
-			<h2 class="visually-hidden">Разработано:</h2>
-      <p>website by</p>
-      <a href="https://htmlacademy.ru">
-				<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html academy">
-      </a>
-	</footer>
+          </li>
+			  </ul>
+      </section>
+      <section class="copyright">
+			  <h2 class="visually-hidden">Разработано:</h2>
+        <p>website by</p>
+          <a href="https://htmlacademy.ru">
+				    <img class="copyright-pic" src="img/logo-htmlacademy.svg" width="115" height="41" alt="html academy">
+          </a>
+      </section>
+    </div>
+  </footer>
 
 </body>
 </html>
